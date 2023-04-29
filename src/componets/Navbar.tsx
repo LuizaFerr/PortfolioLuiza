@@ -1,10 +1,10 @@
-import React, {useState} from 'react'; 
+import React from 'react';
 import womenPowerSittingInChair from '../assets/women-power-sitting-in-chair.png'; 
 
 
 
-const Navbar = () => { 
-  const [nav, setNav] = useState(false)
+
+const Navbar:React.FC<{}> = () => { 
   
   return ( 
     <div className='relative w-full h-[280px] flex justify-between items-center px-4 bg-[#1E1E1E]'> 

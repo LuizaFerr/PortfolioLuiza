@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { ProfilerProps } from 'react';
+import womenPowerSittingInChair from '../assets/women-power-sitting-in-chair.png'; 
 import Luiza from '../assets/Luiza.jpg';
 import Line1 from '../assets/Line 1.png';
 import history1 from '../assets/history-1@2x.png';
@@ -7,7 +8,11 @@ import Frame2 from '../assets/Frame2.png';
 import historynuovo from '../assets/history-nuovo-1@2x (1).png';
 import { useNavigate } from 'react-router-dom';
 
-const Profile = () => {
+interface ProfileProps {
+  onPageChange: (page: string) => void;
+}
+
+const Profile: React.FC<ProfileProps> = ({ onPageChange }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -16,13 +21,22 @@ const Profile = () => {
   };
 
   return (
-    <div name='home' className='w-full h-screen bg-[#fffff]'>
+    <div className='relative w-full h-[280px] flex justify-between items-center px-4 bg-[#1E1E1E]'> 
+      <div> 
+        <img src={womenPowerSittingInChair} alt="Women Power Sitting In Chair" style={{height: '394px', left: '956px', position: 'absolute', top: '46px'}}/> 
+      </div>
+      <div>
+      <p className="absolute left-[23px] top-[-12px] text-[#FAFAEC] text-[128px]" style={{letterSpacing: '0', lineHeight: 'normal', fontFamily: '"Koh Santepheap", sans-serif'}}>Don't<br />lose yourself...<br/></p>
+      </div> 
+    <div data-name='home' className='w-full h-screen bg-[#fffff]'>
       {/* Container */}
       <div className='max-w-[1000px] max-auto px-8 flex flex-col justify-center h-full'>
-        <div
-          className='z-10 bg-[#1E1E1E] rounded-full h-[29px] relative left-[101px] top-[431px] w-28 cursor-pointer'
-          onClick={handleClick}
-        >
+      <div
+  className='z-10 bg-[#1E1E1E] rounded-full h-[29px] relative left-[101px] top-[431px] w-28 cursor-pointer'
+  onClick={() => navigate('/about')}
+>
+  Go to About
+</div>
           <p
             className='z-10 text-[#FAFAEC] text-[22px] h-[29px] relative left-[33px] top-[3px] cursor-pointer'
             style={{

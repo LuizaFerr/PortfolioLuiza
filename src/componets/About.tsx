@@ -1,9 +1,12 @@
 import React from 'react'
 import Women from '../assets/Women.png';
 
-const About = () => {
+
+
+const About:React.FC<{}> = () => { 
+  
   return (
-    <div name='about' className='relative w-full h-[280px] flex justify-between items-center px-4 bg-[#1E1E1E]'>
+    <div data-name='about' className='relative w-full h-[280px] flex justify-between items-center px-4 bg-[#1E1E1E]'>
         <div className='max-w-[1000px] max-auto px-8 flex flex-col justify-center h-full'></div>
         <p className="absolute left-[23px] top-[-12px] text-[#FAFAEC] text-[128px]" style={{letterSpacing: '0', lineHeight: 'normal', fontFamily: '"Koh Santepheap", sans-serif'}}>Practice<br />makes perfect...<br/></p>
         <img src={Women} alt="Women" style={{height: '345px', left: '956px', position: 'absolute', top: '9px'}}/> 
