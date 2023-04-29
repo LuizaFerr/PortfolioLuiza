@@ -1,0 +1,7 @@
+title: Portfolio Luiza
+description: This is my portfolio as a Ux Design, for now it's simple, but soon 
+I'll modify some things, like this description, for now, welcome!
+url: https://ferreiraux.com/
+baseurl: ""
+source: public
+destination: _site

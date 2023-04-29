@@ -1,4 +1,0 @@
-{
-  "presets": ["@babel/preset-env", "@babel/preset-react"],
-  "plugins": ["macros", "transform-css-import-to-string"]
-}
