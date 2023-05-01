@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'docs'),
+    path: path.resolve(__dirname, 'dist'),
   },
   cache: {
     type: 'memory'

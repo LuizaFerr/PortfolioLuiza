@@ -9,7 +9,7 @@ function App() {
   };
 
   return (
-    <Router basename="/PortfolioLuiza">
+    <Router basename="/">
       <Routes>
         <Route path="/" element={<Profile onPageChange={handlePageChange} />} />
         <Route path="/about" element={<About />} />
