@@ -32,21 +32,21 @@ const Profile: React.FC<ProfileProps> = ({ onPageChange }) => {
       {/* Container */}
       <div className='max-w-[1000px] max-auto px-8 flex flex-col justify-center h-full'>
       <div
-  className='z-10 bg-[#1E1E1E] rounded-full h-[29px] relative left-[101px] top-[431px] w-28 cursor-pointer'
+  className='z-10 bg-[#1E1E1E] rounded-full h-[29px] relative left-[56px] top-[854px] w-28 cursor-pointer'
   onClick={() => navigate('/about')}
 >
-  Go to About
+<span
+    className='z-10 text-[#FAFAEC] text-[22px] h-[29px] relative left-[33px] top-[3px] cursor-pointer'
+    style={{
+      letterSpacing: '0',
+      lineHeight: 'normal',
+      fontFamily: '"Inter", sans-serif',
+    }}
+  >
+    More
+  </span>
 </div>
-          <p
-            className='z-10 text-[#FAFAEC] text-[22px] h-[29px] relative left-[33px] top-[3px] cursor-pointer'
-            style={{
-              letterSpacing: '0',
-              lineHeight: 'normal',
-              fontFamily: '"Inter", sans-serif',
-            }}
-          >
-            More
-          </p>
+         
         </div>
         <p className="z-0 absolute top-[554px] left-[8px] w-[366px] font-sans text-[20px] font-light" >
           Ciao a tutti, sono una UX design, mi chiamo Luiza Ferreira e oggi voglio parlarvi 
@@ -66,9 +66,18 @@ const Profile: React.FC<ProfileProps> = ({ onPageChange }) => {
       <p className="absolute left-[425px] top-[554px] w-[411px] text-[#1E1E1E] text-[18px]" style={{letterSpacing: '0em', lineHeight: '1.em', fontFamily: '"Inter", sans-serif', wordWrap: 'break-word'}}>
       It’s a fictional app project that I did while I was studying at <span className="text-bold font-bold">Google Professional Certificates. </span> The objective was to make a simple and user-friendly app
 </p>
-<div className=' bg-[#1E1E1E] rounded-full h-[29px] relative left-[500px] top-[58px] w-28 cursor-pointer'> 
+<div className=' bg-[#1E1E1E] rounded-full h-[29px] absolute left-[534px] top-[634px] w-28 cursor-pointer'> 
 <a href="https://docs.google.com/presentation/d/1_fVkQweh7uRv6bZwtUzLn9xRChT9nYkWYi_WVN8E0Q8/edit?usp=sharing">
-          <p className=' text-[#FAFAEC] text-[22px] h-[29px] relative left-[33px] top-[3px] cursor-pointer' style={{letterSpacing: '0', lineHeight: 'normal', fontFamily: '"Inter", sans-serif'}}>More</p>
+<span
+    className='z-10 text-[#FAFAEC] text-[22px] h-[29px] absolute left-[33px] top-[3px] cursor-pointer'
+    style={{
+      letterSpacing: '0',
+      lineHeight: 'normal',
+      fontFamily: '"Inter", sans-serif',
+    }}
+  >
+    More
+  </span>
         </a>
         </div>
         
