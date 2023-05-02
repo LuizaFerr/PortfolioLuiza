@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.9c9719d1.css",
-    "main.js": "/static/js/main.d7aef410.js",
-    "static/media/Luiza.jpg": "/static/media/Luiza.90cecf4744d9325f79b7.jpg",
+    "main.js": "/static/js/main.07207a32.js",
+    "static/media/Luiza.jpg": "/static/media/Luiza.a7e78394a77b551ddcbe.jpg",
     "static/media/history-nuovo-1@2x (1).png": "/static/media/history-nuovo-1@2x (1).08f9ae5b5209fff39bc8.png",
     "static/media/Frame2.png": "/static/media/Frame2.321014227c84c3dda825.png",
     "static/media/Frame1.png": "/static/media/Frame1.ef6a2c5ca3ddff149a4f.png",
@@ -11,10 +11,10 @@
     "static/media/women-power-sitting-in-chair.png": "/static/media/women-power-sitting-in-chair.03793fc98dfcd2dbee3d.png",
     "index.html": "/index.html",
     "main.9c9719d1.css.map": "/static/css/main.9c9719d1.css.map",
-    "main.d7aef410.js.map": "/static/js/main.d7aef410.js.map"
+    "main.07207a32.js.map": "/static/js/main.07207a32.js.map"
   },
   "entrypoints": [
     "static/css/main.9c9719d1.css",
-    "static/js/main.d7aef410.js"
+    "static/js/main.07207a32.js"
   ]
 }
