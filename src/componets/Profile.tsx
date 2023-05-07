@@ -1,97 +1,92 @@
-import React, { ProfilerProps } from 'react';
-import womenPowerSittingInChair from '../assets/women-power-sitting-in-chair.png'; 
+import React from 'react';
 import Luiza from '../assets/Luiza.jpg';
-import Line1 from '../assets/Line 1.png';
-import history1 from '../assets/history-1@2x.png';
-import Frame1 from '../assets/Frame1.png';
-import Frame2 from '../assets/Frame2.png';
-import historynuovo from '../assets/history-nuovo-1@2x (1).png';
+import Rectangle4 from '../assets/Rectangle4.png';
+import Rectangle3 from '../assets/Rectangle3.png';
+import Rectangle2 from '../assets/Rectangle2.png';
 import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 
 interface ProfileProps {
-  onPageChange: (page: string) => void;
+ onPageChange: (page: string) => void;
 }
 
 const Profile: React.FC<ProfileProps> = ({ onPageChange }) => {
-  const navigate = useNavigate();
+ const navigate = useNavigate();
 
-  const handleClick = () => {
-    // Reindirizza l'utente alla pagina /about
-    navigate('/about');
-  };
+ const handleClick = () => {
+ // Reindirizza l'utente alla pagina /about
+ navigate('/about');
+ };
 
-  return (
-    <div className='relative w-full h-[280px] flex justify-between items-center px-4 bg-[#1E1E1E]'> 
-      <div> 
-        <img src={womenPowerSittingInChair} alt="Women Power Sitting In Chair" style={{height: '394px', left: '956px', position: 'absolute', top: '46px'}}/> 
-      </div>
-      <div>
-      <p className="absolute left-[23px] top-[-12px] text-[#FAFAEC] text-[128px]" style={{letterSpacing: '0', lineHeight: 'normal', fontFamily: '"Koh Santepheap", sans-serif'}}>Don't<br />lose yourself...<br/></p>
-      </div> 
-    <div data-name='home' className='w-full h-screen bg-[#fffff]'>
-      {/* Container */}
-      <div className='max-w-[1000px] max-auto px-8 flex flex-col justify-center h-full'>
-      <div
-  className='z-10 bg-[#1E1E1E] rounded-full h-[29px] relative left-[56px] top-[854px] w-28 cursor-pointer'
-  onClick={() => navigate('/about')}
->
-<span
-    className='z-10 text-[#FAFAEC] text-[22px] h-[29px] relative left-[33px] top-[3px] cursor-pointer'
-    style={{
-      letterSpacing: '0',
-      lineHeight: 'normal',
-      fontFamily: '"Inter", sans-serif',
-    }}
-  >
-    More
-  </span>
-</div>
-         
+ return (
+  <div className='min-h-screen bg-[#141414] h-[1000px] '>
+  <div data-name='home' className='w-full h-full min-h-screen'>
+    {/* Container */}
+    <div className=' max-auto px-8 flex flex-col justify-center h-full'>
+      {/* Il tuo contenuto qui */} 
         </div>
-        <p className="z-0 absolute top-[554px] left-[8px] w-[366px] font-sans text-[20px] font-light" >
-          Ciao a tutti, sono una UX design, mi chiamo Luiza Ferreira e oggi voglio parlarvi 
-          di cosa mi ha portato ad essere qui. Dopo aver terminato gli studi superiori mi 
-          sono immersa nella realtà lavorativa e ho notato che erano poche le possibilità 
-          che mi si presentavano. Il mondo stava cambiando rapidamente sotto l’impulso della 
-          digitalizzazione, molti settori tradizionali stavano perdendo terreno o trasformandosi. 
-          Ma non mi sono scoraggiata e ho iniziato a interessarmi alla tecnologia digitale.
-          <br />
-          <span className="text-[#8B8282]">La mia avventura nel mondo del design è iniziata...</span>
+        <p className=" absolute top-[123px] left-[469px] w-[847px] font-inter text-[15px] font-light text-[#FAFAEC]" >
+        Ciao a tutti, mi chiamo Maria Luiza Ferreira, la mia avventura nel mondo del design è iniziata con il design grafico, dove ho imparato a usare Photoshop per creare immagini professionali. Finito questo percorso di studio, però, volevo capire di più, ho studiato codice per un breve periodo di tempo, per capire come funzionano i siti web dietro le quinte e principalmente per capire come sono le app dal punto di vista tecnico. Ma volevo un lavoro dove potevo usare la creatività, volevo capire come coinvolgere gli utenti e risolvere i loro problemi con soluzione creative ed efficace. Così ho scoperto il Ux Design e me sono innamorata.
+<br />
+Durante il mio percorso di formazione con Google Professional Certificates ho seguito le fasi del design thinking: empatizzare con gli utenti, definire i problemi da risolvere, ideare le possibili soluzioni scelte e testarle con gli utenti.
+<br />
+Sono alla ricerca di una sfida professionale che mi permetta di mettere in pratica le mie conoscenze e di crescere come designer. Se volete saperne di più su di me e sui i miei progetti, potete scorrere dentro il mio portfolio o contattarmi tramite email.
+<br />
+Grazie per la vostra attenzione.
         </p>
+        <div className="absolute" style={{ left: 478, top: 411 }}>
+  <div className="h-1.5 w-64 bg-white rounded"></div>
+</div>
+<div className="absolute" style={{ left: 1057, top: 411 }}>
+  <div className="h-1.5 w-64 bg-white rounded"></div>
+</div>
         <div> 
-        <img src={Luiza} alt="Luiza" style={{height: '166px', width: '166px', borderRadius: '50%', position: 'absolute', top: '299px', left: '35px'}}/>
+        <img src={Luiza} alt="Luiza" style={{height: '329px', width: '334px', borderRadius: '6%', position: 'absolute', top: '78px', left: '87px'}}/>
       </div>
-      <p className="absolute left-[18px] top-[488px] text-[#4B4949] text-[38px]" style={{letterSpacing: '0', lineHeight: 'normal', fontFamily: '"Travel Sans"'}}>Luiza Ferreira</p>
-      <p className="absolute left-[425px] top-[491px] text-[#1E1E1E] text-[38px]" style={{letterSpacing: '0', lineHeight: 'normal', fontFamily: '"Inter", sans-serif'}}>Food Menu App</p>
-      <p className="absolute left-[425px] top-[554px] w-[411px] text-[#1E1E1E] text-[18px]" style={{letterSpacing: '0em', lineHeight: '1.em', fontFamily: '"Inter", sans-serif', wordWrap: 'break-word'}}>
-      It’s a fictional app project that I did while I was studying at <span className="text-bold font-bold">Google Professional Certificates. </span> The objective was to make a simple and user-friendly app
-</p>
-<div className=' bg-[#1E1E1E] rounded-full h-[29px] absolute left-[534px] top-[634px] w-28 cursor-pointer'> 
-<a href="https://docs.google.com/presentation/d/1_fVkQweh7uRv6bZwtUzLn9xRChT9nYkWYi_WVN8E0Q8/edit?usp=sharing">
-<span
-    className='z-10 text-[#FAFAEC] text-[22px] h-[29px] absolute left-[33px] top-[3px] cursor-pointer'
-    style={{
-      letterSpacing: '0',
-      lineHeight: 'normal',
-      fontFamily: '"Inter", sans-serif',
-    }}
-  >
-    More
-  </span>
-        </a>
-        </div>
+      <p className="absolute left-[91px] top-[445px] text-[#FFFFFF] text-[38px]" style={{letterSpacing: '0', lineHeight: 'normal', fontFamily: '"Laila", sans-serif'}}>CONTACTS</p>
+      <p className="absolute left-[469px] top-[76px] text-[#FFFFFF] text-[38px]" style={{letterSpacing: '0', lineHeight: 'normal', fontFamily: '"Laila", sans-serif'}}>PROFILE</p>
+      <p className="absolute left-[789px] top-[391px] text-[#FFFFFF] text-[38px]" style={{letterSpacing: '0', lineHeight: 'normal', fontFamily: '"Laila", sans-serif'}}>PROJECTS</p>
+       {/* Icone dei social */}
+       <ul className="flex flex-col space-y-4 absolute left-[91px] top-[500px]">
+  {/* Icona di Facebook */}
+  <li>
+    <a href="https://www.facebook.com/iLuiiza" className="text-white">
+      <FontAwesomeIcon icon={faFacebook} size="2x" />
+    </a>
+  </li>
+
+  {/* Icona di LinkedIn */}
+  <li>
+    <a href="https://www.linkedin.com/in/maria-luiza-ferreira-a9102b273/" className="text-white">
+      <FontAwesomeIcon icon={faLinkedin} size="2x" />
+    </a>
+  </li>
+
+  {/* Icona di Gmail */}
+  <li>
+    <a href="https://mail.google.com/mail/u/0/?pli=1#inbox" className="text-white" >
+      <FontAwesomeIcon icon={faEnvelope} size="2x" />
+    </a>
+  </li>
+</ul>
+ <p className="absolute text-white top-[610px] left-[134px]">luiza.uxdesigner@gmail.com</p>
         
-        <img src={Line1} alt="Line1" style={{height: '2px', width: '751px', position: 'absolute', top: '690px', left: '423px'}}/>
-        <img src={history1} alt="History1" style={{height: '354px', width: '259px', position: 'absolute', top: '345px', left: '758px'}}/>
+        
         <a href='https://medium.com/@22ferreira.luiza22/about-project-9141e1f1f5b0'>
-        <img src={Frame1} alt="Frame1" style={{height: '315px', width: '346px', position: 'absolute', top: '709px', left: '828px', cursor:'pointer'}}/>
+        <img src={Rectangle4} alt="Rectangle4" style={{height: '401px', width: '243px', position: 'absolute', top: '456px', left: '1072px', cursor:'pointer'}}/>
+        </a>
+        <a href='https://docs.google.com/presentation/d/1_fVkQweh7uRv6bZwtUzLn9xRChT9nYkWYi_WVN8E0Q8/edit?usp=sharing'>
+        <img src={Rectangle3} alt="Rectangle3" style={{height: '401px', width: '243px', position: 'absolute', top: '456px', left: '778px', cursor:'pointer'}}/>
         </a>
         <a href='https://medium.com/@22ferreira.luiza22/amazon-unsolicited-redesign-af0858bba76d'>
-        <img src={Frame2} alt="Frame2" style={{height: '332px', width: '346px', position: 'absolute', top: '709px', left: '423px', cursor: 'pointer'}}/>
+        <img src={Rectangle2} alt="Rectangle2" style={{height: '401px', width: '243px', position: 'absolute', top: '456px', left: '478px', cursor:'pointer'}}/>
         </a>
-        <img src={historynuovo} alt="HistoryNuovo" style={{height: '378px', width: '351px', position: 'absolute', top: '345px', left: '834px'}}/>
+        
       </div>
-    </div>
+      </div>
   )
 }
 

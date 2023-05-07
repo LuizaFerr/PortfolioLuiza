@@ -1,20 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c9719d1.css",
-    "main.js": "/static/js/main.07207a32.js",
+    "main.css": "/static/css/main.93c0c315.css",
+    "main.js": "/static/js/main.91859161.js",
     "static/media/Luiza.jpg": "/static/media/Luiza.a7e78394a77b551ddcbe.jpg",
-    "static/media/history-nuovo-1@2x (1).png": "/static/media/history-nuovo-1@2x (1).08f9ae5b5209fff39bc8.png",
-    "static/media/Frame2.png": "/static/media/Frame2.321014227c84c3dda825.png",
-    "static/media/Frame1.png": "/static/media/Frame1.ef6a2c5ca3ddff149a4f.png",
-    "static/media/history-1@2x.png": "/static/media/history-1@2x.85737a606f1d7d6929ae.png",
+    "static/media/Rectangle4.png": "/static/media/Rectangle4.f47e787d0a2d389c2e3c.png",
+    "static/media/Rectangle3.png": "/static/media/Rectangle3.500ceb7608bdbd3f0810.png",
+    "static/media/Rectangle2.png": "/static/media/Rectangle2.cf3fcecbc5017eef0dc3.png",
     "static/media/Women.png": "/static/media/Women.f078101183ec6a1c70d1.png",
-    "static/media/women-power-sitting-in-chair.png": "/static/media/women-power-sitting-in-chair.03793fc98dfcd2dbee3d.png",
     "index.html": "/index.html",
-    "main.9c9719d1.css.map": "/static/css/main.9c9719d1.css.map",
-    "main.07207a32.js.map": "/static/js/main.07207a32.js.map"
+    "main.93c0c315.css.map": "/static/css/main.93c0c315.css.map",
+    "main.91859161.js.map": "/static/js/main.91859161.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c9719d1.css",
-    "static/js/main.07207a32.js"
+    "static/css/main.93c0c315.css",
+    "static/js/main.91859161.js"
   ]
 }
